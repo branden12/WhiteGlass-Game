@@ -50,13 +50,48 @@ story1_power2_choice6 = tk.Frame(story, bg = 'black')
 story1_power2_choice7 = tk.Frame(story, bg = 'black')
 story1_power2_choice8 = tk.Frame(story, bg = 'black')
 story1_power2_choice9 = tk.Frame(story, bg = 'black')
-#------------------ Story 2 ------------------#
+
+#------------------ Story 2 First Choice------------------#
 
 story2 = tk.Frame(story, bg = 'black')
+story2_choice1_decision1 = tk.Frame(story, bg = 'black')
+story2_choice1_decision2 = tk.Frame(story, bg = 'black')
+story2_choice1_decision3 = tk.Frame(story, bg = 'black')
+story2_choice1_decision4 = tk.Frame(story, bg = 'black')
+story2_choice1_decision5 = tk.Frame(story, bg = 'black')
+story2_choice1_decision6 = tk.Frame(story, bg = 'black')
+story2_choice1_decision7 = tk.Frame(story, bg = 'black')
+story2_choice1_decision8 = tk.Frame(story, bg = 'black')
+story2_choice1_decision9 = tk.Frame(story, bg = 'black')
+story2_choice1_decision10 = tk.Frame(story, bg = 'black')
+story2_choice1_decision11 = tk.Frame(story, bg = 'black')
 
-#------------------ Story 3 ------------------#
+#------------------ Story 2 Second Choice------------------#
+
+story2_choice2_decision1 = tk.Frame(story, bg = 'black')
+story2_choice2_decision2 = tk.Frame(story, bg = 'black')
+story2_choice2_decision3 = tk.Frame(story, bg = 'black')
+story2_choice2_decision4 = tk.Frame(story, bg = 'black')
+story2_choice2_decision5 = tk.Frame(story, bg = 'black')
+
+#------------------Story 3 First Choice------------------#
 
 story3 = tk.Frame(story, bg = 'black')
+story3_choice1_decision1 = tk.Frame(story, bg = 'black')
+story3_choice1_decision2 = tk.Frame(story, bg = 'black')
+story3_choice1_decision3 = tk.Frame(story, bg = 'black')
+story3_choice1_decision4 = tk.Frame(story, bg = 'black')
+story3_choice1_decision5 = tk.Frame(story, bg = 'black')
+story3_choice1_decision6 = tk.Frame(story, bg = 'black')
+story3_choice1_decision7 = tk.Frame(story, bg = 'black')
+
+#------------------Story 3 Second Choice------------------#
+
+story3_choice2_decision1 = tk.Frame(story, bg = 'black')
+story3_choice2_decision2 = tk.Frame(story, bg = 'black')
+story3_choice2_decision3 = tk.Frame(story, bg = 'black')
+story3_choice2_decision4 = tk.Frame(story, bg = 'black')
+story3_choice2_decision5 = tk.Frame(story, bg = 'black')
 
 #------------------ Story 4 ------------------#
 
@@ -89,7 +124,35 @@ for frame in (user_frame,
               story1_power2_choice8,
               story1_power2_choice9,
               story2,
+              story2_choice1_decision1,
+              story2_choice1_decision2,
+              story2_choice1_decision3,
+              story2_choice1_decision4,
+              story2_choice1_decision5,
+              story2_choice1_decision6,
+              story2_choice1_decision7,
+              story2_choice1_decision8,
+              story2_choice1_decision9,
+              story2_choice1_decision10,
+              story2_choice1_decision11,
+              story2_choice2_decision1,
+              story2_choice2_decision2,
+              story2_choice2_decision3,
+              story2_choice2_decision4,
+              story2_choice2_decision5,
               story3,
+              story3_choice1_decision1,
+              story3_choice1_decision2,
+              story3_choice1_decision3,
+              story3_choice1_decision4,
+              story3_choice1_decision5,
+              story3_choice1_decision6,
+              story3_choice1_decision7,
+              story3_choice2_decision1,
+              story3_choice2_decision2,
+              story3_choice2_decision3,
+              story3_choice2_decision4,
+              story3_choice2_decision5,
               story4):
     frame.place(relheight = 1.0, relwidth = 1.0)
 
@@ -267,8 +330,6 @@ story1_power2_decision8.pack(fill='x')
 story1_power2_decision9 = tk.Label(story1_power2_choice9, text = 'You decided to major in Kineseology, \n you earned your degree and started working for organizations to aid there players. \n You become really successful and earned enough to enjoy your life. ', bg = 'red')
 story1_power2_decision9.pack(fill='x')
 
-
-
 #------------------ Story 1  Power 1 Reset Buttons ------------------#
 
 p1reset_button1 = tk.Button(story1_power1_choice3, text = 'Reset from the Beginning', command=lambda:show_frame(story1_power))
@@ -339,13 +400,302 @@ p2return_button4.place(x = 1000, y = 600, width = 300, height = 60)
 
 #------------------ Story 2 ------------------#
 
-story2_title = tk.Label(story2, text = 'story 2', bg = 'white')
+story2_title = tk.Label(story2, text = "Your friend has been working on a simulation game that will be revolutional to the gaming industry. \n They invited you over their companies facility, so you can try their new game. \n You're very thrilled to try it out and so the game begins, you spawn in an Apocalyptic Wasteland, and your main goal is to survive.", bg = 'red')
 story2_title.pack(fill='x')
+
+#------------------ Story 2 First Choice ------------------#
+
+story2_title_btn1 = tk.Button(story2, text = "Look for Weapons, and Survivors", command=lambda:show_frame(story2_choice1_decision1))
+story2_title_btn1.place(x = 640, y = 600, width = 300, height = 60)
+
+story2_c1_d1 = tk.Label(story2_choice1_decision1, text = "You found a pistol with a little bit of ammo and discovered a survivor who use to work for a hospial, \n they are very skilled with aiding people. \n You guys are getting chased by a hoard of zombies....", bg = 'red')
+story2_c1_d1.pack(fill='x')
+
+story2_c1_d1_btn1 = tk.Button(story2_choice1_decision1,  text = "Run Away", command=lambda:show_frame(story2_choice1_decision2))
+story2_c1_d1_btn1.place(x = 640, y = 600, width = 300, height = 60)
+
+story2_c1_d1_btn2 = tk.Button(story2_choice1_decision1, text = 'Kill the Zombies', command=lambda:show_frame(story2_choice1_decision7))
+story2_c1_d1_btn2.place(x = 1000, y = 600, width = 300, height = 60)
+
+story2_c1_d2 = tk.Label(story2_choice1_decision2, text = 'You guys escape the zombies, but \n you guys are very tired but in need for Food and Water', bg = 'red')
+story2_c1_d2.pack(fill='x')
+
+story2_c1_d2_btn1 = tk.Button(story2_choice1_decision2, text = 'Split up and search for Food and Water', command=lambda:show_frame(story2_choice1_decision3))
+story2_c1_d2_btn1.place(x = 640, y = 600, width = 300, height = 60)
+
+story2_c1_d2_btn2 = tk.Button(story2_choice1_decision2, text = 'Go together and search for Food and Water', command=lambda:show_frame(story2_choice1_decision8))
+story2_c1_d2_btn2.place(x = 1000, y = 600, width = 300, height = 60)
+
+story2_c1_d3 = tk.Label(story2_choice1_decision3, text = 'You and the survivor come back with food and water. \n But the survivor came back infected, where you have to make a choice...', bg = 'red')
+story2_c1_d3.pack(fill='x')
+
+story2_c1_d3_btn1 = tk.Button(story2_choice1_decision3, text = 'Kill the survivor', command=lambda:show_frame(story2_choice1_decision4))
+story2_c1_d3_btn1.place(x = 640, y = 600, width = 300, height = 60)
+
+story2_c1_d3_btn2 = tk.Button(story2_choice1_decision3, text = 'Aid the survivor', command=lambda:show_frame(story2_choice1_decision9))
+story2_c1_d3_btn2.place(x = 1000, y = 600, width = 300, height = 60)
+
+story2_c1_d4 = tk.Label(story2_choice1_decision4, text = 'Now that you killed the survivor with the food and water you found. \n You also, found a walky talky while scavenging, \n you receive a transmission from the walky talky. \n The device gave you directions where to head for shelter and protection.', bg = 'red')
+story2_c1_d4.pack(fill='x')
+
+story2_c1_d4_btn1 = tk.Button(story2_choice1_decision4, text = 'Rest for the Night', command=lambda:show_frame(story2_choice1_decision5))
+story2_c1_d4_btn1.place(x = 640, y = 600, width = 300, height = 60)
+
+story2_c1_d4_btn2 = tk.Button(story2_choice1_decision4, text = 'Search for Vehicle', command=lambda:show_frame(story2_choice1_decision10))
+story2_c1_d4_btn2.place(x = 1000, y = 600, width = 300, height = 60)
+
+story2_c1_d5 = tk.Label(story2_choice1_decision5, text = 'You rested for the night and consumed some food so you can gain your enevery the next day. \n Once the sun rised, you found a hidden hatch that led to a room...', bg = 'red')
+story2_c1_d5.pack(fill='x')
+
+story2_c1_d5_btn1 = tk.Button(story2_choice1_decision5, text = 'Search for a Vehicle', command=lambda:show_frame(story2_choice1_decision6))
+story2_c1_d5_btn1.place(x = 640, y = 600, width = 300, height = 60)
+
+story2_c1_d5_btn2 = tk.Button(story2_choice1_decision5, text = 'Go inside the hatch', command=lambda:show_frame(story2_choice1_decision11))
+story2_c1_d5_btn2.place(x = 1000, y = 600, width = 300, height = 60)
+
+story2_c1_d6 = tk.Label(story2_choice1_decision6, text = 'You find a vehicle, and gassed up the vehicle at the nearest gas station. \n You followed the coordinates that you receive from the transmission. \n But once you arrived at the destination, \n you are surprised with the military and their guns pointed at you, \n where they fired their weapons and you died. \n Game Over!!', bg = 'red')
+story2_c1_d6.pack(fill='x')
+
+story2_c1_d7 = tk.Label(story2_choice1_decision7, text = 'You lost ammo and died.....', bg = 'red')
+story2_c1_d7.pack(fill='x')
+
+story2_c1_d8 = tk.Label(story2_choice1_decision8, text = "You guys were able gather enough food for each other until, \n it wasn't enough where you guys starved to death together.", bg = 'red')
+story2_c1_d8.pack(fill='x')
+
+story2_c1_d9 = tk.Label(story2_choice1_decision9, text = 'The Survivor ended up becoming a zombie, and kills you.', bg = 'red')
+story2_c1_d9.pack(fill='x')
+
+story2_c1_d10 = tk.Label(story2_choice1_decision10, text = "You found a vehicle, but you are very tired, \n you died of starvation since you didn't rest and decided \n to leave your belongings instead you went to go look for a vehicle. ", bg = 'red')
+story2_c1_d10.pack(fill='x')
+
+story2_c1_d11 = tk.Label(story2_choice1_decision11, text = 'Once you go inside the hatch, there was locked door and a camera pointed at you... \n where you are welcomed with a colony of survivors ready \n to go out and fight against the the horde of zombies and \n the government who has been spawning the creatures. \n You fight with the colony and eventually beating the game. \n GOOD JOB!', bg = 'red')
+story2_c1_d11.pack(fill='x')
+
+#------------------ Story 2 First Choice Reset ------------------#
+
+story2_reset1 = tk.Button(story2_choice1_decision6, text = 'Reset to the Beginning', command=lambda:show_frame(story2))
+story2_reset1.place(x = 640, y = 600, width = 300, height = 60)
+
+story2_reset2 = tk.Button(story2_choice1_decision7, text = 'Reset to the Beginning', command=lambda:show_frame(story2))
+story2_reset2.place(x = 640, y = 600, width = 300, height = 60)
+
+story2_reset3 = tk.Button(story2_choice1_decision8, text = 'Reset to the Beginning', command=lambda:show_frame(story2))
+story2_reset3.place(x = 640, y = 600, width = 300, height = 60)
+
+story2_reset4 = tk.Button(story2_choice1_decision9, text = 'Reset to the Beginning', command=lambda:show_frame(story2))
+story2_reset4.place(x = 640, y = 600, width = 300, height = 60)
+
+story2_reset5 = tk.Button(story2_choice1_decision10, text = 'Reset to the Beginning', command=lambda:show_frame(story2))
+story2_reset5.place(x = 640, y = 600, width = 300, height = 60)
+
+story2_reset6 = tk.Button(story2_choice1_decision11, text = 'Reset to the Beginning', command=lambda:show_frame(story2))
+story2_reset6.place(x = 640, y = 600, width = 300, height = 60)
+
+#------------------ Story 2 First Choice Return Theme ------------------#
+
+story2_return1 = tk.Button(story2_choice1_decision6, text = 'Return to Theme', command=lambda:show_frame(theme_frame))
+story2_return1.place(x = 1000, y = 600, width = 300, height = 60)
+
+story2_return2 = tk.Button(story2_choice1_decision7, text = 'Return to Theme', command=lambda:show_frame(theme_frame))
+story2_return2.place(x = 1000, y = 600, width = 300, height = 60)
+
+story2_return3 = tk.Button(story2_choice1_decision8, text = 'Return to Theme', command=lambda:show_frame(theme_frame))
+story2_return3.place(x = 1000, y = 600, width = 300, height = 60)
+
+story2_return4 = tk.Button(story2_choice1_decision9, text = 'Return to Theme', command=lambda:show_frame(theme_frame))
+story2_return4.place(x = 1000, y = 600, width = 300, height = 60)
+
+story2_return5 = tk.Button(story2_choice1_decision10, text = 'Return to Theme', command=lambda:show_frame(theme_frame))
+story2_return5.place(x = 1000, y = 600, width = 300, height = 60)
+
+story2_return6 = tk.Button(story2_choice1_decision11, text = 'Return to Theme', command=lambda:show_frame(theme_frame))
+story2_return6.place(x = 1000, y = 600, width = 300, height = 60)
+
+#------------------ Story 2 Second Choice ------------------#
+
+story2_title_btn2 = tk.Button(story2, text = "Look for Food and Shelter", command=lambda:show_frame(story2_choice2_decision1))
+story2_title_btn2.place(x = 1000, y = 600, width = 300, height = 60)
+
+story2_c2_d1 = tk.Label(story2_choice2_decision1, text = 'While serching for food, you found seeds \n where you can start your own farm and produce an unlimited supply of food. \n You produce plenty where you can go venture and get supplies \n such as weapons and gear to protect yourself, \n also look for survivors.', bg = 'red')
+story2_c2_d1.pack(fill='x')
+
+story2_c2_d1_btn1 = tk.Button(story2_choice2_decision1, text = 'Go Venture', command=lambda:show_frame(story2_choice2_decision2))
+story2_c2_d1_btn1.place(x = 640, y = 600, width = 300, height = 60)
+
+story2_c2_d1_btn2 = tk.Button(story2_choice2_decision1, text = 'Stay and Farm', command=lambda:show_frame(story2_choice2_decision4))
+story2_c2_d1_btn2.place(x = 1000, y = 600, width = 300, height = 60)
+
+story2_c2_d2 = tk.Label(story2_choice2_decision2, text = 'While venturing, you found weapons and gear to protect yourself. \n Also, you discover two survivors who are need of food, \n so you take them with you to your place and provided them with your supplies. \n Days goes by and found more survivors and gear \n where you started a village/community that provides and protects anyone you find, \n but one night you guys are ambushed with a big horde of zombies \n where you to need to find a way to protect everyone.', bg = 'red')
+story2_c2_d2.pack(fill='x')
+
+story2_c2_d2_btn1 = tk.Button(story2_choice2_decision2, text = 'Get Everyone and Prepare to Depart', command=lambda:show_frame(story2_choice2_decision3))
+story2_c2_d2_btn1.place(x = 640, y = 600, width = 300, height = 60)
+
+story2_c2_d2_btn2 = tk.Button(story2_choice2_decision2, text = 'Stay and Defend', command=lambda:show_frame(story2_choice2_decision5))
+story2_c2_d2_btn2.place(x = 1000, y = 600, width = 300, height = 60)
+
+story2_c2_d3 = tk.Label(story2_choice2_decision3, text = 'You and your community left to go far from the place where you find another shelter from an abandon military base \n  where you are supplied with hightech weaponry \n to fight against the horde of zombies and purify the world from the infection.', bg = 'red')
+story2_c2_d3.pack(fill='x')
+
+story2_c2_d4 = tk.Label(story2_choice2_decision4, text = "While farming, you're place was attacked by zombies, \n where you had nothing to defend yourself. You Died. Game Over!", bg = 'red')
+story2_c2_d4.pack(fill='x')
+
+story2_c2_d5 = tk.Label(story2_choice2_decision5, text = 'While defending you lost a lot of people, \n weapons and gear were very limited, \n and the horde overwhelmed your people where you guys are stuck. Game Over!', bg = 'red')
+story2_c2_d5.pack(fill='x')
+
+#------------------ Story 2 Second Choice Reset ------------------#
+
+story2_reset1_c2 = tk.Button(story2_choice2_decision3, text = 'Reset to the Beginning', command=lambda:show_frame(story2))
+story2_reset1_c2.place(x = 640, y = 600, width = 300, height = 60)
+
+story2_reset2_c2 = tk.Button(story2_choice2_decision4, text = 'Reset to the Beginning', command=lambda:show_frame(story2))
+story2_reset2_c2.place(x = 640, y = 600, width = 300, height = 60)
+
+story2_reset3_c2 = tk.Button(story2_choice2_decision5, text = 'Reset to the Beginning', command=lambda:show_frame(story2))
+story2_reset3_c2.place(x = 640, y = 600, width = 300, height = 60)
+
+
+#------------------ Story 2 Second Choice Return Theme ------------------#
+
+story2_return1_c2 = tk.Button(story2_choice2_decision3, text = 'Return to Theme', command=lambda:show_frame(theme_frame))
+story2_return1_c2.place(x = 1000, y = 600, width = 300, height = 60)
+
+story2_return2_c2 = tk.Button(story2_choice2_decision4, text = 'Return to Theme', command=lambda:show_frame(theme_frame))
+story2_return2_c2.place(x = 1000, y = 600, width = 300, height = 60)
+
+story2_return3_c2 = tk.Button(story2_choice2_decision5, text = 'Return to Theme', command=lambda:show_frame(theme_frame))
+story2_return3_c2.place(x = 1000, y = 600, width = 300, height = 60)
 
 #------------------ Story 3 ------------------#
 
-story3_title = tk.Label(story3, text = 'red', bg = 'white')
+story3_title = tk.Label(story3, text = 'You wake up for first day of school, \n feeling tired from the days you stayed up playing video games. \n Due to our current circumstances of COVID-19, classes are recorded through zoom.. \n you have a choice to attend or dismiss class..', bg = 'red')
 story3_title.pack(fill='x')
+
+#------------------ Story 3 First Decision ------------------#
+
+story3_c1 = tk.Button(story3, text = 'Attend', command=lambda:show_frame(story3_choice1_decision1))
+story3_c1.place(x = 640, y = 600, width = 300, height = 60)
+
+story3_c1_d1 = tk.Label(story3_choice1_decision1, text = 'Since you attended class you were introduced \n to a club where you can engage with the campus community. \n Especially, you are able to meet new friends and help each for the assignment. \n Class just finished, you have choice to do homework right away or play video games \n since you have a break for a a while until the next class', bg = 'red')
+story3_c1_d1.pack(fill='x')
+
+story3_c1_d1_btn1 = tk.Button(story3_choice1_decision1, text = 'Do Homework', command=lambda:show_frame(story3_choice1_decision2))
+story3_c1_d1_btn1.place(x = 640, y = 600, width = 300, height = 60)
+
+story3_c1_d1_btn2 = tk.Button(story3_choice1_decision1, text = 'Play Video Games', command=lambda:show_frame(story3_choice1_decision5))
+story3_c1_d1_btn2.place(x = 1000, y = 600, width = 300, height = 60)
+
+story3_c1_d2 = tk.Label(story3_choice1_decision2, text = 'You did homework right away, and started to get ahead of the class \n where you have enough time for yourself to learn other things or relax. \n One of your classmates decided to ask you for help \n you have a choice to help them or ignore them ', bg = 'red')
+story3_c1_d2.pack(fill='x')
+
+story3_c1_d2_btn1 = tk.Button(story3_choice1_decision2, text = 'Help them', command=lambda:show_frame(story3_choice1_decision3))
+story3_c1_d2_btn1.place(x = 640, y = 600, width = 300, height = 60)
+
+story3_c1_d2_btn2 = tk.Button(story3_choice1_decision2, text = 'Ignore them', command=lambda:show_frame(story3_choice1_decision4))
+story3_c1_d2_btn2.place(x = 1000, y = 600, width = 300, height = 60)
+
+story3_c1_d3 = tk.Label(story3_choice1_decision3, text = 'Since you help them, you guys become really successful together \n throughout your college career and became bestfriends. \n You guys worked really well in your field of study \n where you guys started an organization, became investors, and built a company. \n Succesful Ending!', bg = 'red')
+story3_c1_d3.pack(fill='x')
+
+story3_c1_d4 = tk.Label(story3_choice1_decision4, text = 'Since you decided to stay independent and stick to your plans, n\ also ignoring people when they need your help. n\ You graduated very successful, but you end up meeting the people you ignored n\ where they become more successful than you.Last thing you know, n\ they are the project cordinatoor that you are working with. ', bg = 'red')
+story3_c1_d4.pack(fill='x')
+
+story3_c1_d5 = tk.Label(story3_choice1_decision5, text = "You decided to play video games, \n you decided to do homework later since you want to relax and enjoy your break. \n your guardian ask you to do chores, since you are home and they see you not doing anything...", bg = 'red')
+story3_c1_d5.pack(fill='x')
+
+story3_c1_d5_btn1 = tk.Button(story3_choice1_decision5, text= 'Help', command=lambda:show_frame(story3_choice1_decision6))
+story3_c1_d5_btn1.place(x = 640, y = 600, width = 300, height = 60)
+
+story3_c1_d5_btn2 = tk.Button(story3_choice1_decision5, text = 'Lie', command=lambda:show_frame(story3_choice1_decision7))
+story3_c1_d5_btn2.place(x = 1000, y = 600, width = 300, height = 60)
+
+story3_c1_d6 = tk.Label(story3_choice1_decision6, text = "You decided to help your guardian with your chores and task to do around the house, \n but you tend to be tired while doing homework, \n so you decided to do your homework last minute where you didn't produce a good work. Later you graduate with a degree, \n but how you preform your task hinders your success in your field. \n Where you are just stuck as a regular employee \n who is in a contract with the company.", bg = 'red')
+story3_c1_d6.pack(fill='x')
+
+story3_c1_d7 = tk.Label(story3_choice1_decision7, text = 'Since you lied that you were busy and played video games, \n you started to make YouTube videos since you do pretty well at videogames \n and you would like to share your skills to the gaming community. \n You become an influencer to many people in the gaming community \n where you decided to drop out of school and pursue becoming an influencer', bg = 'red')
+story3_c1_d7.pack(fill='x')
+
+#------------------ Story 3 First Decision Reset ------------------#
+
+story3_c1_reset1 = tk.Button(story3_choice1_decision3, text = "Reset to the Beginning",  command=lambda:show_frame(story3))
+story3_c1_reset1.place(x = 640, y = 600, width = 300, height = 60)
+
+story3_c1_reset2 = tk.Button(story3_choice1_decision4, text = "Reset to the Beginning",  command=lambda:show_frame(story3))
+story3_c1_reset2.place(x = 640, y = 600, width = 300, height = 60)
+
+story3_c1_reset3 = tk.Button(story3_choice1_decision6, text = "Reset to the Beginning",  command=lambda:show_frame(story3))
+story3_c1_reset3.place(x = 640, y = 600, width = 300, height = 60)
+
+story3_c1_reset4 = tk.Button(story3_choice1_decision7, text = "Reset to the Beginning",  command=lambda:show_frame(story3))
+story3_c1_reset4.place(x = 640, y = 600, width = 300, height = 60)
+
+#------------------ Story 3 First Decision Return ------------------#
+
+story3_c1_return1 = tk.Button(story3_choice1_decision3, text = "Return to Theme",  command=lambda:show_frame(theme_frame))
+story3_c1_return1.place(x = 1000, y = 600, width = 300, height = 60)
+
+story3_c1_return2 = tk.Button(story3_choice1_decision4, text = "Return to Theme",  command=lambda:show_frame(theme_frame))
+story3_c1_return2.place(x = 1000, y = 600, width = 300, height = 60)
+
+story3_c1_return3 = tk.Button(story3_choice1_decision6, text = "Return to Theme",  command=lambda:show_frame(theme_frame))
+story3_c1_return3.place(x = 1000, y = 600, width = 300, height = 60)
+
+story3_c1_return4 = tk.Button(story3_choice1_decision7, text = "Return to Theme",  command=lambda:show_frame(theme_frame))
+story3_c1_return4.place(x = 1000, y = 600, width = 300, height = 60)
+
+#------------------ Story 3 Second Decision ------------------#
+
+story3_c2 = tk.Button(story3, text = 'Dismiss', command=lambda:show_frame(story3_choice2_decision1))
+story3_c2.place(x = 1000, y = 600, width = 300, height = 60)
+
+story3_c2_d1 = tk.Label(story3_choice2_decision1, text = "You decided to dismiss class \n since you want to catch up with your sleep and you a very tired, \n  you won't be acquiring any knowledge. \n your guardian ask you to do chores, \n since you are home and they see you not doing anything...", bg = 'red')
+story3_c2_d1.pack(fill='x')
+
+story3_c2_d1_btn1 = tk.Button(story3_choice2_decision1, text = 'Lie', command=lambda:show_frame(story3_choice2_decision2))
+story3_c2_d1_btn1.place(x = 640, y = 600, width = 300, height = 60)
+
+story3_c2_d1_btn2 = tk.Button(story3_choice2_decision1, text = 'Help', command=lambda:show_frame(story3_choice2_decision4))
+story3_c2_d1_btn2.place(x = 1000, y = 600, width = 300, height = 60)
+
+story3_c2_d2 = tk.Label(story3_choice2_decision2, text = "You lied to your guardian that you're in break for class, and decided \n to play video games and plan to do homework later tonight. \n Now you're very hungry, you want have a choice \n to order from Uber or make your own meal", bg = 'red')
+story3_c2_d2.pack(fill='x')
+
+story3_c2_d2_btn1 = tk.Button(story3_choice2_decision2, text = "Uber", command=lambda:show_frame(story3_choice2_decision3))
+story3_c2_d2_btn1.place(x = 640, y = 600, width = 300, height = 60)
+
+story3_c2_d2_btn2 = tk.Button(story3_choice2_decision2, text = "Make your own Meal", command=lambda:show_frame(story3_choice2_decision5))
+story3_c2_d2_btn2.place(x = 1000, y = 600, width = 300, height = 60)
+
+story3_c2_d3 = tk.Label(story3_choice2_decision3, text = 'After receiving your order and finished eating, \n you seem very tired so you decided to rest for the day. \n You kept repeating the same routine to the point \n where you dropped out of school, \n and decided to work for a minimum wage job.', bg = 'red')
+story3_c2_d3.pack(fill='x')
+
+story3_c2_d4 = tk.Label(story3_choice2_decision4, text = 'You decided to help your guardian while your chores, \n but you continued to miss class. \n You started to fail each class since you are always busy \n so you became a part time student \n where the duration of you receiving your degree will be longer.', bg = 'red')
+story3_c2_d4.pack(fill='x')
+
+story3_c2_d5 = tk.Label(story3_choice2_decision5, text = 'You have your own meal, where you feel refresh and consumed enough energy in order to motivate yourself to do your school. \n But your guardian was very upset at you since they figured you lied to them, \n so they decided to take away your fun. \n Where you are forced to continue school \n without having any enjoyment until you graduate', bg = 'red')
+story3_c2_d5.pack(fill='x')
+
+#------------------ Story 3 Second Decision Reset ------------------#
+
+story3_c2_reset1 = tk.Button(story3_choice2_decision3, text = 'Reset to the Beginning', command=lambda:show_frame(story3))
+story3_c2_reset1.place(x = 640, y = 600, width = 300, height = 60)
+
+story3_c2_reset2 = tk.Button(story3_choice2_decision4, text = 'Reset to the Beginning', command=lambda:show_frame(story3))
+story3_c2_reset2.place(x = 640, y = 600, width = 300, height = 60)
+
+story3_c2_reset3 = tk.Button(story3_choice2_decision5, text = 'Reset to the Beginning', command=lambda:show_frame(story3))
+story3_c2_reset3.place(x = 640, y = 600, width = 300, height = 60)
+
+#------------------ Story 3 Second Decision Return ------------------#
+
+story3_c2_return1 = tk.Button(story3_choice2_decision3, text = 'Return to Theme', command=lambda:show_frame(theme_frame))
+story3_c2_return1.place(x = 1000, y = 600, width = 300, height = 60)
+
+story3_c2_return2 = tk.Button(story3_choice2_decision4, text = 'Return to Theme', command=lambda:show_frame(theme_frame))
+story3_c2_return2.place(x = 1000, y = 600, width = 300, height = 60)
+
+story3_c2_return3 = tk.Button(story3_choice2_decision5, text = 'Return to Theme', command=lambda:show_frame(theme_frame))
+story3_c2_return3.place(x = 1000, y = 600, width = 300, height = 60)
 
 #------------------ Story 4 ------------------#
 
